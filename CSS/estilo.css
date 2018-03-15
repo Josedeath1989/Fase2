@@ -1,0 +1,83 @@
+@import url (https://fonts.googleapis.com/css?family=Ubuntu);
+
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Ubuntu', sans-serif ;
+	
+}
+header{
+	width: auto;
+	height: 60px;
+	background: #00B0FF;
+	display: flex;
+	justify-content: flex-end;
+
+}
+header nav ul{
+	display: flex;
+	list-style: none;
+
+}
+header nav ul li a{
+	display: block;
+	padding: 20px 20px;
+	color: white;
+	text-decoration: none;
+}
+header nav ul ul {
+	position: absolute;
+	top: 60px;
+	display: block;
+	background: #00ACC1;
+	transform: translateY(-100%);
+	opacity: 0;
+	transition: all .5s;
+
+}
+header nav ul li a span{
+	transition: all .6s;
+
+}
+header nav ul li  a:hover span{
+	transform: translateY(10%);
+	opacity: 0;
+}
+header nav ul li:hover ul{
+	opacity: 1;
+	transform: translateY(0%);
+
+}
+#home{
+	background-color: #00E5FF;
+	height: 20PX
+
+}
+header nav ul li:hover{
+	background: #004D40;
+}
+#home:hover{
+	background: #004D40;
+}
+.box{
+	justify-content: center;
+	width: 1000px;
+	height: 150px;
+	padding-left:16px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	padding:30px;
+	margin-top:20px;
+}
+footer{
+	display: block;
+	width: auto;
+	height: 120px;
+	background: #00897B;
+	padding-top: 95px;
+	margin-top: 22px;
+	text-align: center;
+}
+
+
+
+
